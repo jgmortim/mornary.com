@@ -38,15 +38,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <tr>
                         <td rowspan="2">1.0.0.alpha.2</td>
                         <td rowspan="2">2026-03-03</td>
-                        <td><a href="mornary-1.0.0.02.msi" download="mornary-1.0.0.02.msi">Windows Installer (.msi)</a></td>
+                        <td><a href="/binaries/mornary-1.0.0.02.msi" download="mornary-1.0.0.02.msi">Windows Installer (.msi)</a></td>
                     </tr>
                     <tr>
-                        <td><a href="mornary-1.0.0.alpha.2.jar" download="mornary-1.0.0.alpha.2.jar">Java Archive (.jar)</a></td>
+                        <td><a href="/binaries/mornary-1.0.0.alpha.2.jar" download="mornary-1.0.0.alpha.2.jar">Java Archive (.jar)</a></td>
                     </tr>
                     <tr>
                         <td>1.0.0.alpha.1</td>
                         <td>2026-02-26</td>
-                        <td><a href="mornary-1.0.0.alpha.1.jar" download="mornary-1.0.0.alpha.1.jar">Java Archive (.jar)</a></td>
+                        <td><a href="/binaries/mornary-1.0.0.alpha.1.jar" download="mornary-1.0.0.alpha.1.jar">Java Archive (.jar)</a></td>
                     </tr>
                 </table>
             </div>
