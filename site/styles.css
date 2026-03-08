@@ -38,12 +38,25 @@ table {
 
 table, th, td {
     border: 1px solid;
+    border-collapse: collapse;
 }
 
 th, td {
     padding-left: 15px;
     padding-right: 15px;
     min-width: 100px;
+}
+
+th {
+    background-color: #AAA;
+}
+
+tbody:nth-child(odd) {
+  background: #CCC;
+}
+
+tbody:nth-child(even) {
+  background: #DDD;
 }
 
 .content {
