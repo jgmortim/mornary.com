@@ -36,9 +36,12 @@ $counts = json_decode(file_get_contents("../binaries/download-counts.json"), tru
             </tbody>
             <tbody>
                 <tr>
-                    <td>1.0.0-beta.1</td>
-                    <td>Upcoming</td>
-                    <td></td>
+                    <td rowspan="2">1.0.0-beta.1</td>
+                    <td rowspan="2">Upcoming</td>
+                    <td><a href="/includes/download.php?file=mornary-1.0.0.11.msi" download="mornary-1.0.0.11.msi">Windows Installer (.msi)</a> (<?= $counts["mornary-1.0.0.11.msi"] ?> downloads)</td>
+                </tr>
+                <tr>
+                    <td><a href="/includes/download.php?file=mornary-1.0.0-beta.1.jar" download="mornary-1.0.0-beta.1.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-beta.1.jar"] ?> downloads)</td>
                 </tr>
             </tbody>
             <tbody>
@@ -48,14 +51,14 @@ $counts = json_decode(file_get_contents("../binaries/download-counts.json"), tru
                     <td><a href="/includes/download.php?file=mornary-1.0.0.02.msi" download="mornary-1.0.0.02.msi">Windows Installer (.msi)</a> (<?= $counts["mornary-1.0.0.02.msi"] ?> downloads)</td>
                 </tr>
                 <tr>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0.alpha.2.jar" download="mornary-1.0.0.alpha.2.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.2.jar"] ?> downloads)</td>
+                    <td><a href="/includes/download.php?file=mornary-1.0.0-alpha.2.jar" download="mornary-1.0.0-alpha.2.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.2.jar"] ?> downloads)</td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
                     <td>1.0.0-alpha.1</td>
                     <td>2026-02-26</td>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0.alpha.1.jar" download="mornary-1.0.0.alpha.1.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.1.jar"] ?> downloads)</td>
+                    <td><a href="/includes/download.php?file=mornary-1.0.0-alpha.1.jar" download="mornary-1.0.0-alpha.1.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.1.jar"] ?> downloads)</td>
                 </tr>
             </tbody>
         </table>
