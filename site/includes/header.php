@@ -2,8 +2,8 @@
 // Optional: allow pages to set a custom title
 if (!isset($pageTitle)) {
     $pageTitle = "Mornary";
-    $currentPage;
 }
+$currentPage;
 ?>
 <!DOCTYPE html>
 <html lang="en">
