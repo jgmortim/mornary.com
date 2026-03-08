@@ -27,6 +27,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         <th>Downloads</th>
                     </tr>
                     <tr>
+                        <td rowspan="2">1.0.0.beta.1</td>
+                        <td rowspan="2">Upcoming</td>
+                        <td>
+
+                        </tr>
+                        <tr>
+
+                        </tr>
+                    <tr>
                         <td rowspan="2">1.0.0.alpha.2</td>
                         <td rowspan="2">2026-03-03</td>
                         <td><a href="mornary-1.0.0.02.msi" download="mornary-1.0.0.02.msi">Windows Installer (.msi)</a></td>
