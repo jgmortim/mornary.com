@@ -14,23 +14,23 @@ $releases = [
         "version" => "1.0.0-beta.1",
         "date" => "2026-03-08",
         "files" => [
-            ["file" => "mornary-1.0.0.11.msi", "label" => "Windows Installer (.msi)"],
-            ["file" => "mornary-1.0.0-beta.1.jar", "label" => "Java Archive (.jar)"]
+            ["file" => "mornary-1.0.0.11.msi", "label" => "Windows Installer"],
+            ["file" => "mornary-1.0.0-beta.1.jar", "label" => "Java Archive"]
         ]
     ],
     [
         "version" => "1.0.0-alpha.2",
         "date" => "2026-03-03",
         "files" => [
-            ["file" => "mornary-1.0.0.02.msi", "label" => "Windows Installer (.msi)"],
-            ["file" => "mornary-1.0.0-alpha.2.jar", "label" => "Java Archive (.jar)"]
+            ["file" => "mornary-1.0.0.02.msi", "label" => "Windows Installer"],
+            ["file" => "mornary-1.0.0-alpha.2.jar", "label" => "Java Archive"]
         ]
     ],
     [
         "version" => "1.0.0-alpha.1",
         "date" => "2026-02-26",
         "files" => [
-            ["file" => "mornary-1.0.0-alpha.1.jar", "label" => "Java Archive (.jar)"]
+            ["file" => "mornary-1.0.0-alpha.1.jar", "label" => "Java Archive"]
         ]
     ]
 ];
@@ -74,9 +74,8 @@ $releases = [
                                     <td rowspan="<?= $rowspan ?>"><?= $release["date"] ?></td>
                                 <?php endif; ?>
                                 <td>
-                                    <a href="/includes/download.php?file=<?= $file["file"] ?>" download="<?= $file["file"] ?>">
-                                        <?= $file["label"] ?>
-                                    </a> (<?= $counts[$file["file"]] ?? 0 ?> downloads)
+                                    <a href="/includes/download.php?file=<?= $file["file"] ?>" download="<?= $file["file"] ?>"><?= $file["label"] ?></a>
+                                    (<?= $counts[$file["file"]] ?? 0 ?> downloads)
                                 </td>
                             </tr>
                         <?php endforeach; ?>
