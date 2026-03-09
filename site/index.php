@@ -5,7 +5,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 <main>
     <div class="content">
-        <hr/>
         <p>
             Mornary is an opensource command-line application that encodes arbitrary binary data as Morse code
             that decodes into plausible English words. A standard Morse decoder sees ordinary text,

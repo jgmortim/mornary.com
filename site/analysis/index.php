@@ -5,7 +5,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 <main>
     <div class="content">
-        <hr/>
         <p>
             Mornary is a generative steganographic system that encodes arbitrary binary data as Morse code. When decoded normally,
             the Morse produces English text that appears unrelated to the hidden payload. This page analyzes the system’s properties,

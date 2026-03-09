@@ -38,6 +38,7 @@ $currentPage;
                     </a>
                 </nav>
             </div>
-        </div>        
+        </div>
+        <hr/>
     </div>
 </header>

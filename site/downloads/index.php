@@ -6,7 +6,6 @@ $counts = json_decode(file_get_contents("../binaries/download-counts.json"), tru
 ?>
 <main>
     <div class="content">
-        <hr/>
         <h2>Installing & Uninstalling</h2>
         <h3>Windows</h3>
         <p>The Windows installer (.msi) will install Mornary under <code>C:\Program Files\Mornary</code>.</p>

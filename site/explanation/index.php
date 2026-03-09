@@ -5,7 +5,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 <main>
     <div class="content">
-        <hr/>
         <h2>How it Works</h2>
         <p>
             This application takes advantage of the fact that binary and Morse code are both expressed with two characters.
