@@ -1,6 +1,6 @@
 <?php
 
-$file = basename($_GET['file']);
+$file = basename($_GET['file'] ?? '');
 $path = "../binaries/" . $file;
 
 if (!file_exists($path)) {

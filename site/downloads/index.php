@@ -3,6 +3,37 @@ $pageTitle = "Downloads - Mornary";
 $currentPage = "DOWNLOADS";
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 $counts = json_decode(file_get_contents("../binaries/download-counts.json"), true);
+
+$releases = [
+    [
+        "version" => "1.0.0",
+        "date" => "Upcoming",
+        "files" => []
+    ],
+    [
+        "version" => "1.0.0-beta.1",
+        "date" => "2026-03-08",
+        "files" => [
+            ["file" => "mornary-1.0.0.11.msi", "label" => "Windows Installer (.msi)"],
+            ["file" => "mornary-1.0.0-beta.1.jar", "label" => "Java Archive (.jar)"]
+        ]
+    ],
+    [
+        "version" => "1.0.0-alpha.2",
+        "date" => "2026-03-03",
+        "files" => [
+            ["file" => "mornary-1.0.0.02.msi", "label" => "Windows Installer (.msi)"],
+            ["file" => "mornary-1.0.0-alpha.2.jar", "label" => "Java Archive (.jar)"]
+        ]
+    ],
+    [
+        "version" => "1.0.0-alpha.1",
+        "date" => "2026-02-26",
+        "files" => [
+            ["file" => "mornary-1.0.0-alpha.1.jar", "label" => "Java Archive (.jar)"]
+        ]
+    ]
+];
 ?>
 <main>
     <div class="content">
@@ -19,47 +50,39 @@ $counts = json_decode(file_get_contents("../binaries/download-counts.json"), tru
             or if you just don't want to use the installer. These will require you to have Java installed on your machine.
             You can run the JARs with <code>java -jar mornary-[version].jar</code> followed by the command line arguments.
         </p>
-        <h2>Files</h2>
+        <h2>Software</h2>
         <table>
             <tr>
                 <th>Version</th>
                 <th>Date Published</th>
                 <th>Downloads</th>
             </tr>
-            <tbody>
-                <tr>
-                    <td>1.0.0</td>
-                    <td>Upcoming</td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td rowspan="2">1.0.0-beta.1</td>
-                    <td rowspan="2">2026-03-08</td>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0.11.msi" download="mornary-1.0.0.11.msi">Windows Installer (.msi)</a> (<?= $counts["mornary-1.0.0.11.msi"] ?> downloads)</td>
-                </tr>
-                <tr>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0-beta.1.jar" download="mornary-1.0.0-beta.1.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-beta.1.jar"] ?> downloads)</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td rowspan="2">1.0.0-alpha.2</td>
-                    <td rowspan="2">2026-03-03</td>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0.02.msi" download="mornary-1.0.0.02.msi">Windows Installer (.msi)</a> (<?= $counts["mornary-1.0.0.02.msi"] ?> downloads)</td>
-                </tr>
-                <tr>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0-alpha.2.jar" download="mornary-1.0.0-alpha.2.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.2.jar"] ?> downloads)</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>1.0.0-alpha.1</td>
-                    <td>2026-02-26</td>
-                    <td><a href="/includes/download.php?file=mornary-1.0.0-alpha.1.jar" download="mornary-1.0.0-alpha.1.jar">Java Archive (.jar)</a> (<?= $counts["mornary-1.0.0-alpha.1.jar"] ?> downloads)</td>
-                </tr>
-            </tbody>
+            <?php foreach ($releases as $release): ?>
+                <tbody>
+                    <?php $rowspan = max(count($release["files"]), 1); ?>
+                    <?php if (empty($release["files"])): ?>
+                        <tr>
+                            <td><?= $release["version"] ?></td>
+                            <td><?= $release["date"] ?></td>
+                            <td></td>
+                        </tr>
+                    <?php else: ?>
+                        <?php foreach ($release["files"] as $i => $file): ?>
+                            <tr>
+                                <?php if ($i === 0): ?>
+                                    <td rowspan="<?= $rowspan ?>"><?= $release["version"] ?></td>
+                                    <td rowspan="<?= $rowspan ?>"><?= $release["date"] ?></td>
+                                <?php endif; ?>
+                                <td>
+                                    <a href="/includes/download.php?file=<?= $file["file"] ?>" download="<?= $file["file"] ?>">
+                                        <?= $file["label"] ?>
+                                    </a> (<?= $counts[$file["file"]] ?? 0 ?> downloads)
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </tbody>
+            <?php endforeach; ?>
         </table>
     </div>
 </main>
