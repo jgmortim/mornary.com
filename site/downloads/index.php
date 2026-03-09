@@ -83,6 +83,23 @@ $releases = [
                 </tbody>
             <?php endforeach; ?>
         </table>
+
+        <h2>Example Files</h2>
+        The example files below are all Mornary-encoded. You can use them to test the application.
+        <table>
+            <tr>
+                <th>File</th>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td><a href="/includes/download.php?file=ascii-art.txt" download="ascii-art.txt">ascii-art.txt</a> (<?= $counts["ascii-art.txt"] ?? 0?> downloads)</td>
+                    <td><code>mornary -D ascii-art.txt</code></td>
+                    <td>This file will decode to pure ASCII text so there is no need to specify an output file.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </main>
 <?php
