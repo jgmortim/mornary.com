@@ -46,7 +46,12 @@ $releases = [
             Project Mornary does not have the funding to pay for a code signing certificate. You can chose to trust it
             or you can compile the source code yourself. Instructions for that are in the github README.
         </p>
-        <img src="/images/SmartScreenWarning.jpg" alt="Warning message from Windows Defender">
+        <details>
+            <summary>
+                Click to view an example of the Windows Defender pop-up warning.
+            </summary>
+            <img src="/images/SmartScreenWarning.jpg" alt="Warning message from Windows Defender" style="height: 300px">
+        </details>
         <p>
             To uninstall, simply go to <code>Setting > Apps > Installed apps</code>, find "mornary" in the list,
             click on the 3 dots, and click "uninstall".
