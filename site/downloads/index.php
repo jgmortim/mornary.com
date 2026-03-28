@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Downloads - Mornary";
 $currentPage = "DOWNLOADS";
+$canonical = "https://mornary.com/downloads";
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 $counts = json_decode(file_get_contents("../binaries/download-counts.json"), true);
 

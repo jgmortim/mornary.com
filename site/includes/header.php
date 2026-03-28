@@ -41,6 +41,7 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($pageTitle) ?></title>
+    <link rel="canonical" href=$canonical />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
 </head>

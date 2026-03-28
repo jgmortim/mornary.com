@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Home - Mornary";
 $currentPage = "HOME";
+$canonical = "https://mornary.com";
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 <main>
