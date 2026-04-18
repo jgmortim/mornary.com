@@ -64,6 +64,7 @@ $releases = [
             You can run the JARs with <code>java -jar mornary-[version].jar</code> followed by the command line arguments.
         </p>
         <h2>Software</h2>
+        <a href="https://github.com/jgmortim/mornary/blob/main/CHANGELOG.md" target="_blank">View Changelog</a>
         <table>
             <tr>
                 <th>Version</th>
