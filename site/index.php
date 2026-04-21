@@ -40,8 +40,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>The following is a copy of <code>mornary --help</code>:</P>
         <pre>
 
-    Usage: mornary [-hV] [-O=<file>] [-t=<int>] (-e=<text> | -E=<file> | -d=<text> | -D=<file>)
-    Generative steganography using morse code.
+    Usage: mornary [-hVm] [-O=&lt;file>] [-t=&lt;int>] (-e=&lt;text> | -E=&lt;file> | -d=&lt;text> | -D=&lt;file>)
+    Generative steganography using Morse code.
     -h, --help            Show this help message and exit.
     -V, --version         Print version information and exit.
     -e, --encode=&lt;text>   Encodes the supplied text.
@@ -50,6 +50,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     -D, --Decode=&lt;file>   Decodes the Mornary-encoded contents of the supplied file.
     -O, --Output=&lt;file>   Writes the output to the supplied file. If omitted, output will be printed to the console.
     -t, --threads=&lt;int>   Sets the thread pool size. Only used when encoding files. Defaults to 10.
+    -m, --low-memory      Reduces the dictionary size in order to reduce the memory footprint of the app. Only used for encoding.
         </pre>
         <h3>Examples</h3>
         <pre>
