@@ -4,15 +4,15 @@
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://mornary.com/explanation</loc>
+        <loc>https://mornary.com/explanation/</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://mornary.com/analysis</loc>
+        <loc>https://mornary.com/analysis/</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://mornary.com/downloads</loc>
+        <loc>https://mornary.com/downloads/</loc>
         <priority>0.80</priority>
     </url>
 </urlset>
