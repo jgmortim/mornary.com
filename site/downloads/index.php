@@ -8,8 +8,11 @@ $counts = json_decode(file_get_contents("../binaries/download-counts.json"), tru
 $releases = [
     [
         "version" => "1.0.0",
-        "date" => "Upcoming",
-        "files" => []
+        "date" => "2026-04-20",
+        "files" => [
+            ["file" => "mornary-1.0.0.msi", "label" => "Windows Installer"],
+            ["file" => "mornary-1.0.0.jar", "label" => "Java Archive"]
+        ]
     ],
     [
         "version" => "1.0.0-beta.1",
