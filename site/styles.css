@@ -3,12 +3,10 @@ body {
 }
 
 main {
-    width: min(calc(100% - 2vw), 1250px);
+    width: min(calc(100% - 4vw), 1250px);
     margin-right: auto;
     margin-left: auto;
-    padding-top: 1rem;
-    padding-right: 1vw;
-    padding-left: 1vw;
+    padding: 1rem 2vw;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: LightSteelBlue;

@@ -69,7 +69,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     // View help
     mornary -h
     </pre>
-    <br/>
 </main>
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';

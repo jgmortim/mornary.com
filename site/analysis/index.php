@@ -121,7 +121,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         perfectly with arbitrary binary payloads. That said, what Mornary lacks in detectability, it makes up for in information
         density.
     </p>
-    <br/>
 </main>
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
