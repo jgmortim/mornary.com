@@ -46,7 +46,6 @@ figcaption {
 
 table {
     width: 100%;
-    margin-bottom: 20px;
 }
 
 table, th, td {
@@ -56,8 +55,8 @@ table, th, td {
 
 th, td {
     min-width: 100px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 th {
@@ -92,7 +91,7 @@ tbody:nth-child(even) {
 }
 
 .table-wrapper {
-    overflow-x:auto
+    overflow-x: auto;
 }
 
 /* Site header */
@@ -212,5 +211,10 @@ footer {
         width: calc(100% - 4vw);
         padding-right: 2vw;
         padding-left: 2vw;
+    }
+
+    th, td {
+        padding-right: 1vw;
+        padding-left: 1vw;
     }
 }
