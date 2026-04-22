@@ -4,22 +4,21 @@ html {
 }
 
 body {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    min-height: calc(100vh - 10px);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    min-height: calc(100vh - 10px);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
     background-color: DimGray;
+    grid-template-rows: auto 1fr auto;
 }
 
 main {
     width: min(100%, 1250px);
-    margin: auto;
-    margin-top: 0;
-    background-color: LightSteelBlue;
-    border-bottom-left-radius: 10px;
+    margin: 0 auto auto;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: LightSteelBlue;
 }
 
 h2 {
@@ -32,19 +31,19 @@ h3 {
 }
 
 table {
-    margin-bottom: 20px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 table, th, td {
-    border: 1px solid;
     border-collapse: collapse;
+    border: 1px solid;
 }
 
 th, td {
-    padding-left: 15px;
-    padding-right: 15px;
     min-width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 th {
@@ -60,8 +59,8 @@ tbody:nth-child(even) {
 }
 
 .content {
-    margin-left: 30px;
     margin-right: 30px;
+    margin-left: 30px;
 }
 
 .center {
@@ -69,8 +68,8 @@ tbody:nth-child(even) {
 }
 
 .centered-list {
-    text-align: left;
     margin: auto;
+    text-align: left;
 }
 
 .centered-list > ul {
@@ -82,10 +81,10 @@ code {
 }
 
 pre {
-    background-color: lightgrey;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     border-radius: 5px;
+    background-color: lightgrey;
 }
 
 figure {
@@ -100,8 +99,8 @@ figcaption {
 
 .diagram {
     display: block;
-    margin: auto;
     width: auto;
+    margin: auto;
 }
 
 /* Site header */
@@ -109,16 +108,16 @@ figcaption {
 .site-header {
     width: min(100%, 1250px);
     margin: auto;
-    background-color: LightSteelBlue;
+    padding-top: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding-top: 1rem;
+    background-color: LightSteelBlue;
 }
 
 .container {
     max-width: 1250px;
-    margin-left: 30px;
     margin-right: 30px;
+    margin-left: 30px;
 }
 
 .brand {
@@ -128,9 +127,9 @@ figcaption {
 }
 
 .brand img {
-    height: 120px;
     align-self: stretch;
     width: auto;
+    height: 120px;
     object-fit: contain;
 }
 
@@ -150,36 +149,36 @@ figcaption {
 }
 
 .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1.5rem;
     text-align: center;
-    display: flex;
-    justify-content: center;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .nav-btn {
     display: inline-block;
     padding: 0.1rem 0.6rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    border: 1px solid SlateGray;
-    background-color: SlateGray;
-    color: white;
     transition: all 0.15s ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    border: 1px solid SlateGray;
+    border-radius: 6px;
+    background-color: SlateGray;
 }
 
 .nav-btn-current {
     display: inline-block;
     padding: 0.1rem 0.6rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    border: 1px solid #444;
-    background-color: #444;
-    color: white;
     cursor: default;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #444;
 }
 
 .nav-btn:hover {
@@ -202,11 +201,11 @@ figcaption {
 /* Site Footer */
 
 footer {
-    margin-top: auto;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: dimgrey;
-    color: white;
+    margin-top: auto;
     text-align: center;
+    color: white;
+    background-color: dimgrey;
 }
