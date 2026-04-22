@@ -71,6 +71,5 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
                 </nav>
             </div>
         </div>
-        <hr/>
     </div>
 </header>

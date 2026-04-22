@@ -1,21 +1,11 @@
-html {
-    height: 100%;
-    margin: 0;
-}
-
 body {
-    display: grid;
-    min-height: calc(100vh - 10px);
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
     background-color: DimGray;
-    grid-template-rows: auto 1fr auto;
 }
 
 main {
-    width: min(100%, 1250px);
-    margin: 0 auto auto;
+    width: min(calc(100% - 2rem), 1250px);
+    margin-right: auto;
+    margin-left: auto;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: LightSteelBlue;
@@ -51,16 +41,17 @@ th {
 }
 
 tbody:nth-child(odd) {
-  background: #CCC;
+    background: #CCC;
 }
 
 tbody:nth-child(even) {
-  background: #DDD;
+    background: #DDD;
 }
 
 .content {
     margin-right: 30px;
     margin-left: 30px;
+    padding-top: 1rem;
 }
 
 .center {
@@ -81,6 +72,7 @@ code {
 }
 
 pre {
+    overflow: auto;
     margin-right: auto;
     margin-left: auto;
     border-radius: 5px;
@@ -93,7 +85,7 @@ figure {
 }
 
 figcaption {
-    display: table-caption; 
+    display: table-caption;
     caption-side: bottom;
 }
 
@@ -106,9 +98,11 @@ figcaption {
 /* Site header */
 
 .site-header {
-    width: min(100%, 1250px);
+    width: min(calc(100% - 2rem), 1250px);
     margin: auto;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #b2d7d8;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: LightSteelBlue;
@@ -208,4 +202,16 @@ footer {
     text-align: center;
     color: white;
     background-color: dimgrey;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        margin: 1vw;
+    }
+
+    main, .site-header {
+        width: calc(100% - 4vw);
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
 }

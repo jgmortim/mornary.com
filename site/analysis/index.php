@@ -38,7 +38,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             code. A Mornary decoder, on the other hand, sees and extracts the hidden binary payload.
         </p>
         <figure>
-            <img src="/images/diagram.png" alt="Mornary encoding and decoding pipeline" class="diagram" style="height: 200px">
+            <img src="/images/diagram.png" alt="Mornary encoding and decoding pipeline" class="diagram" style="max-height: 200px; max-width: 80vw">
             <figcaption>Fig.1 - A Mornary transmission can be interpreted in two ways: a standard Morse decoder produces English text, while a Mornary decoder reconstructs the hidden binary payload.</figcaption>
         </figure>
         <h2>Strengths</h2>

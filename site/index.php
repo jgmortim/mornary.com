@@ -16,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             rather than a modified file.
         </p>
         <figure>
-            <img src="/images/diagram.png" alt="Mornary encoding and decoding pipeline" class="diagram" style="height: 200px">
+            <img src="/images/diagram.png" alt="Mornary encoding and decoding pipeline" class="diagram" style="max-height: 200px; max-width: 80vw">
             <figcaption>Fig.1 - A Mornary transmission can be interpreted in two ways: a standard Morse decoder produces English text, while a Mornary decoder reconstructs the hidden binary payload.</figcaption>
         </figure>
         <h2>Demo</h2>
