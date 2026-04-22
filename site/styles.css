@@ -21,6 +21,29 @@ h3 {
     margin-left: 2rem;
 }
 
+code {
+    background-color: lightgrey;
+    word-wrap: break-word;
+}
+
+pre {
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+figure {
+    display: table;
+    margin: auto;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
 table {
     width: 100%;
     margin-bottom: 20px;
@@ -62,28 +85,6 @@ tbody:nth-child(even) {
     display: inline-block;
 }
 
-code {
-    background-color: lightgrey;
-}
-
-pre {
-    overflow: auto;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 5px;
-    background-color: lightgrey;
-}
-
-figure {
-    display: table;
-    margin: auto;
-}
-
-figcaption {
-    display: table-caption;
-    caption-side: bottom;
-}
-
 .diagram {
     display: block;
     width: auto;
@@ -92,7 +93,7 @@ figcaption {
 
 /* Site header */
 
-.site-header {
+header {
     width: min(calc(100% - 2vw), 1250px);
     margin: auto;
     padding: 1rem 1vw;
@@ -203,7 +204,7 @@ footer {
         margin: 1vw;
     }
 
-    main, .site-header {
+    main, header {
         width: calc(100% - 4vw);
         padding-right: 2vw;
         padding-left: 2vw;

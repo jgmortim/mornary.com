@@ -46,8 +46,7 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-
-<header class="site-header">
+<header>
     <div class="container">
         <div class="brand">
             <img src="/images/icon256.png" alt="Mornary logo">
