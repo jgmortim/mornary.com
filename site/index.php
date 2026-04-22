@@ -38,36 +38,34 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <h3>Commands</h3>
     <p>The following is a copy of <code>mornary --help</code>:</P>
     <pre>
-
-    Usage: mornary [-hVm] [-O=&lt;file>] [-t=&lt;int>] (-e=&lt;text> | -E=&lt;file> | -d=&lt;text> | -D=&lt;file>)
-    Generative steganography using Morse code.
-    -h, --help            Show this help message and exit.
-    -V, --version         Print version information and exit.
-    -e, --encode=&lt;text>   Encodes the supplied text.
-    -E, --Encode=&lt;file>   Encodes the supplied file.
-    -d, --decode=&lt;text>   Decodes the supplied Mornary-encoded text.
-    -D, --Decode=&lt;file>   Decodes the Mornary-encoded contents of the supplied file.
-    -O, --Output=&lt;file>   Writes the output to the supplied file. If omitted, output will be printed to the console.
-    -t, --threads=&lt;int>   Sets the thread pool size. Only used when encoding files. Defaults to 10.
-    -m, --low-memory      Reduces the dictionary size in order to reduce the memory footprint of the app. Only used for encoding.
+Usage: mornary [-hVm] [-O=&lt;file>] [-t=&lt;int>] (-e=&lt;text> | -E=&lt;file> | -d=&lt;text> | -D=&lt;file>)
+Generative steganography using Morse code.
+-h, --help            Show this help message and exit.
+-V, --version         Print version information and exit.
+-e, --encode=&lt;text>   Encodes the supplied text.
+-E, --Encode=&lt;file>   Encodes the supplied file.
+-d, --decode=&lt;text>   Decodes the supplied Mornary-encoded text.
+-D, --Decode=&lt;file>   Decodes the Mornary-encoded contents of the supplied file.
+-O, --Output=&lt;file>   Writes the output to the supplied file. If omitted, output will be printed to the console.
+-t, --threads=&lt;int>   Sets the thread pool size. Only used when encoding files. Defaults to 10.
+-m, --low-memory      Reduces the dictionary size in order to reduce the memory footprint of the app. Only used for encoding.
     </pre>
     <h3>Examples</h3>
     <pre>
+// Encoding text
+mornary -e "Hello World!"
 
-    // Encoding text
-    mornary -e "Hello World!"
+// Encoding a file
+mornary -E input.txt -O output.txt
 
-    // Encoding a file
-    mornary -E input.txt -O output.txt
+// Decoding text
+mornary -d ".- .. .-. -.-- / --.. / . / .-- . ... - / .-- .- -. - / .-- / -.. . .. - -.-- / ...- / -.. / -.-"
 
-    // Decoding text
-    mornary -d ".- .. .-. -.-- / --.. / . / .-- . ... - / .-- .- -. - / .-- / -.. . .. - -.-- / ...- / -.. / -.-"
+// Decoding a text file
+mornary -D input.txt -O output.txt
 
-    // Decoding a text file
-    mornary -D input.txt -O output.txt
-
-    // View help
-    mornary -h
+// View help
+mornary -h
     </pre>
 </main>
 <?php

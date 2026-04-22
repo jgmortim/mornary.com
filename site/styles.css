@@ -30,6 +30,8 @@ pre {
     overflow: auto;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     border-radius: 5px;
     background-color: lightgrey;
 }
