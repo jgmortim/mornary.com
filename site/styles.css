@@ -6,6 +6,7 @@ main {
     width: min(calc(100% - 2vw), 1250px);
     margin-right: auto;
     margin-left: auto;
+    padding-top: 1rem;
     padding-right: 1vw;
     padding-left: 1vw;
     border-bottom-right-radius: 10px;
@@ -48,12 +49,6 @@ tbody:nth-child(odd) {
 
 tbody:nth-child(even) {
     background: #DDD;
-}
-
-.content {
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-top: 1rem;
 }
 
 .center {
