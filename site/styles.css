@@ -22,8 +22,8 @@ h3 {
 }
 
 code {
-    background-color: lightgrey;
     word-wrap: break-word;
+    background-color: lightgrey;
 }
 
 pre {
@@ -89,6 +89,10 @@ tbody:nth-child(even) {
     display: block;
     width: auto;
     margin: auto;
+}
+
+.table-wrapper {
+    overflow-x:auto
 }
 
 /* Site header */
