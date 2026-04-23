@@ -105,18 +105,15 @@ tbody:nth-child(even) {
 /* Site header */
 
 header {
+    display: flex;
+    align-items: stretch;
     margin: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.brand {
-    display: flex;
-    align-items: stretch;
     gap: 20px;
 }
 
-.brand img {
+header img {
     align-self: stretch;
     width: auto;
     height: 120px;

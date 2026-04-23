@@ -47,26 +47,24 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
 </head>
 <body>
 <header>
-    <div class="brand">
-        <img src="/images/icon256.png" alt="Mornary logo">
-        <div class="brand-text">
-            <h1>Mornary</h1>
-            <p>
-                Generative Steganography Using Morse Code.
-            </p>
-            <nav class="nav">
-                <a href="/" class="<?php echo $currentPage == "HOME" ? 'nav-btn-current' : 'nav-btn'; ?>">Home</a>
+    <img src="/images/icon256.png" alt="Mornary logo">
+    <div class="brand-text">
+        <h1>Mornary</h1>
+        <p>
+            Generative Steganography Using Morse Code.
+        </p>
+        <nav class="nav">
+            <a href="/" class="<?php echo $currentPage == "HOME" ? 'nav-btn-current' : 'nav-btn'; ?>">Home</a>
 
-                <a href="/explanation/" class="<?php echo $currentPage == "EXPLANATION" ? 'nav-btn-current' : 'nav-btn'; ?>">How It Works</a>
+            <a href="/explanation/" class="<?php echo $currentPage == "EXPLANATION" ? 'nav-btn-current' : 'nav-btn'; ?>">How It Works</a>
 
-                <a href="/analysis/" class="<?php echo $currentPage == "ANALYSIS" ? 'nav-btn-current' : 'nav-btn'; ?>">Technical Analysis</a>
+            <a href="/analysis/" class="<?php echo $currentPage == "ANALYSIS" ? 'nav-btn-current' : 'nav-btn'; ?>">Technical Analysis</a>
 
-                <a href="/downloads/" class="<?php echo $currentPage == "DOWNLOADS" ? 'nav-btn-current' : 'nav-btn'; ?>">Downloads</a>
-                <span>|</span>
-                <a href="https://github.com/jgmortim/mornary" target="_blank" rel="noopener" class="nav-btn github">
-                    Source Code
-                </a>
-            </nav>
-        </div>
+            <a href="/downloads/" class="<?php echo $currentPage == "DOWNLOADS" ? 'nav-btn-current' : 'nav-btn'; ?>">Downloads</a>
+            <span>|</span>
+            <a href="https://github.com/jgmortim/mornary" target="_blank" rel="noopener" class="nav-btn github">
+                Source Code
+            </a>
+        </nav>
     </div>
 </header>
