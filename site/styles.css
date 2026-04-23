@@ -110,12 +110,6 @@ header {
     border-top-right-radius: 10px;
 }
 
-.container {
-    max-width: 1250px;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
 .brand {
     display: flex;
     align-items: stretch;
