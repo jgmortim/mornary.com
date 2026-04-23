@@ -37,8 +37,7 @@ pre {
     overflow: auto;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding: 0.5rem 0.7rem 0.7rem;
     border-radius: 5px;
     background-color: lightgrey;
 }
