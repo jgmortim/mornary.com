@@ -3,7 +3,9 @@
 if (!isset($pageTitle)) {
     $pageTitle = "Mornary";
 }
-$currentPage;
+if (!isset($currentPage)) {
+    $currentPage = "";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +43,9 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($pageTitle) ?></title>
-    <link rel="canonical" href=$canonical />
+    <?php if (isset($canonical)): ?>
+		<link rel="canonical" href="<?= $canonical ?>" />
+    <?php endif; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
 </head>
