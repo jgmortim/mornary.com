@@ -44,10 +44,10 @@ $releases = [
     <h3>Windows</h3>
     <p>The Windows installer (.msi) will install Mornary under <code>C:\Program Files\Mornary</code>.</p>
     <p>
-        Windows Defender SmartScreen will give you a pop-up stating that this is an unrecognized app and it will ask
-        if you want to run it or not. It will also list the publisher as "Unknown publisher. This is because
-        Project Mornary does not have the funding to pay for a code signing certificate. You can chose to trust it
-        or you can compile the source code yourself. Instructions for that are in the github README.
+        Windows Defender SmartScreen will give you a pop-up stating that this is an unrecognized app, and it will ask
+        if you want to run it or not. It will also list the publisher as "Unknown publisher". This is because
+        Project Mornary does not have the funding to pay for a code signing certificate. You can choose to trust it,
+        or you can compile the source code yourself. Instructions for that are in the GitHub README.
     </p>
     <details>
         <summary>

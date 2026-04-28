@@ -75,7 +75,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <p>
         One advantage of Mornary is its relatively high information density compared with other text-based steganography
         systems, especially structural and linguistic forms. But even compared to other generative forms of text-based
-        steganography, such as <a href="https://www.spammimic.com/">Spammimic</a>, Mornary is significantly more dense.
+        steganography, such as <a href="https://www.spammimic.com/">Spammimic</a>, Mornary is significantly denser.
         Using the word <code>Hello</code> as an example, <strong>Spammimic generates a cover text that is 1,114 characters.
         Mornary produces just 64.</strong>
     </p>
@@ -109,7 +109,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </p>
     <h3>English Words &ne; Plausible English Text</h3>
     <p>
-        Morse code that decodes to <code>MEET E N MADE MADE G ON ETHER TAME G TOWN RANGE PLEASE T</code> may be suficient to
+        Morse code that decodes to <code>MEET E N MADE MADE G ON ETHER TAME G TOWN RANGE PLEASE T</code> may be sufficient to
         convince someone unaware of Mornary that the transmission was in-fact Morse code. However, it still leaves much to be
         desired in terms of convincing them that there isn't a hidden message. This reflects both an implementation limitation
         of the current application and an inherent technical limitation of Mornary as a system.

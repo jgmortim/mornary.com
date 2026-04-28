@@ -59,7 +59,7 @@ If you're looking for secrets, you've found one. Meet Peggy the stegosaurus :)
         <a href="/downloads/" class="<?php echo $currentPage == "DOWNLOADS" ? 'nav-btn-current' : 'nav-btn'; ?>">Downloads</a>
     </nav>
 	<a id="github-button" href="https://github.com/jgmortim/mornary" target="_blank" rel="noopener">
-		<img id="github-logo" src="/images/github.svg" alt="Github logo">
-		<span>View project on Github</span>
+		<img id="github-logo" src="/images/github.svg" alt="GitHub logo">
+		<span>View project on GitHub</span>
 	</a>
 </header>
