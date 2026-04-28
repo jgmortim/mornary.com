@@ -21,6 +21,25 @@ main {
     border-bottom-left-radius: 10px;
 }
 
+header {
+    display: grid;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-template-columns: calc(min(30vw, 120px) + 1rem) auto;
+    grid-template-rows: auto auto;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    color: white;
+    background-color: dimgrey;
+}
+
 h2 {
     text-align: center;
     text-decoration: underline;
@@ -104,44 +123,6 @@ tbody:nth-child(even) {
     overflow-x: auto;
 }
 
-/* Site header */
-
-header {
-    display: grid;
-    margin: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    grid-template-columns: calc(min(30vw, 120px) + 1rem) auto;
-    grid-template-rows: auto auto;
-}
-
-#logo {
-    align-self: stretch;
-    width: auto;
-    height: min(30vw, 120px);
-    object-fit: contain;
-    grid-column: 1;
-    grid-row: 1 / 3;
-    margin-right: 1rem;
-}
-
-#header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#header-text h1 {
-    margin: 0 0 0.5rem 0;
-}
-
-#header-text p {
-    margin: 0;
-    font-size: large;
-}
-
 .header-nav {
     display: flex;
     align-content: space-between;
@@ -192,35 +173,48 @@ header {
     background-color: #444;
 }
 
-/* Site Footer */
+#logo {
+    align-self: stretch;
+    width: auto;
+    height: min(30vw, 120px);
+    margin-right: 1rem;
+    object-fit: contain;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
 
-footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-top: auto;
-    text-align: center;
-    color: white;
-    background-color: dimgrey;
+#header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#header-text h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+#header-text p {
+    margin: 0;
+    font-size: large;
 }
 
 #github-button {
-    z-index: 99;
     position: fixed;
+    z-index: 99;
     top: 30px;
     right: 0;
     display: flex;
     align-items: center;
-
-    border: 2px solid white;
-    border-right: none;
     padding: 0.6rem;
     transition: all 0.5s ease-in-out;
     font-weight: 500;
     text-decoration: none;
     color: white;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border: 2px solid white;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
     background-color: DarkOliveGreen;
 }
 
@@ -252,29 +246,34 @@ footer {
         padding-left: 1vw;
     }
 
+    .header-nav {
+        display: grid;
+        align-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+        text-align: center;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+    }
+
     #logo {
         grid-column: 1;
         grid-row: 1;
-    }
-
-    .header-nav {
-        margin-top: 1.5rem;
-        grid-column: 1 / 3;
-        grid-row: 2;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-content: space-between;
-        text-align: center;
-        gap: 1px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .header-nav {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #github-button {
+        right: calc(((100% - 1250px) / 2) + 4px);
     }
 }
