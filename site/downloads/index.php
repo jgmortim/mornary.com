@@ -117,6 +117,11 @@ $releases = [
                     <td><code>mornary -D ascii-art.txt</code></td>
                     <td>This file will decode to pure ASCII text so there is no need to specify an output file.</td>
                 </tr>
+                <tr>
+                    <td><a href="/includes/download.php?file=song.txt" download="song.txt">song.txt</a> (<?= $counts["song.txt"] ?? 0?> downloads)</td>
+                    <td><code>mornary -D song.txt -O song.mp3</code></td>
+                    <td>This file will decode to an mp3 audio file.</td>
+                </tr>
             </tbody>
         </table>
     </div>
