@@ -122,6 +122,11 @@ $releases = [
                     <td><code>mornary -D song.txt -O song.mp3</code></td>
                     <td>This file will decode to an mp3 audio file.</td>
                 </tr>
+                <tr>
+                    <td><a href="/includes/download.php?file=qr.txt" download="qr.txt">qr.txt</a> (<?= $counts["qr.txt"] ?? 0?> downloads)</td>
+                    <td><code>mornary -D qr.txt -O qr.bmp</code></td>
+                    <td>This file will decode to an 25x25pixel bitmap image of a QR code.</td>
+                </tr>
             </tbody>
         </table>
     </div>
