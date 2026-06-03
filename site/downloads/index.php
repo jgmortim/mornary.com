@@ -125,7 +125,7 @@ $releases = [
                 <tr>
                     <td><a href="/includes/download.php?file=qr.txt" download="qr.txt">qr.txt</a> (<?= $counts["qr.txt"] ?? 0?> downloads)</td>
                     <td><code>mornary -D qr.txt -O qr.bmp</code></td>
-                    <td>This file will decode to an 25x25pixel bitmap image of a QR code.</td>
+                    <td>This file will decode to a 25x25 pixel bitmap image of a QR code.</td>
                 </tr>
             </tbody>
         </table>
