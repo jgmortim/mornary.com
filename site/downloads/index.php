@@ -56,8 +56,8 @@ $releases = [
         <img src="/images/SmartScreenWarning.jpg" alt="Warning message from Windows Defender" style="height: 300px">
     </details>
     <p>
-        To uninstall, simply go to <code>Setting > Apps > Installed apps</code>, find "mornary" in the list,
-        click on the 3 dots, and click "uninstall".
+        To uninstall, simply go to <code><bdi>Settings</bdi> &gt; <bdi>Apps</bdi> &gt; <bdi>Installed apps</bdi></code>,
+        find "mornary" in the list, click on the 3 dots, and click "uninstall".
     </p>
     <h3>Java</h3>
     <p>
